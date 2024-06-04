@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.home_page{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    background-color: #378cde;
+    z-index: 1;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    flex-wrap: wrap;
+}
+ 
+
+.home_page ul{
+    overflow: hidden;
+}
+.home_page li{
+    float: left;
+    list-style-type: none;
+}
+
+.home_page  li a {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 0px 6px;
+    transition: .7s;
+}
+
+.home_page ul li a:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.bars{
+    cursor: pointer;
+    display: none;
+    margin: 0px 10px;
+}
+.bar1, .bar2,
+.bar3{
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    margin: 5px;
+    transition: .4s;
+}
+
+.change .bar1{
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.bar2 {
+    width: 20px;
+   
+
+}
+
+.change .bar3{
+    transform: translate(0, -7px) rotate(45deg);
+}
+
+.icons img{
+    margin: 0px 10px;
+}
+
+#nav_content{
+    position: relative;
+    width: 100%;
+    position: fixed;
+    top: 120px;
+    height: 90%;
+    background-color:  rgba(0, 0, 0, .9);
+    color: black;
+    transition: .3s !important;
+    display: none;
+    z-index: 1 !important;
+}
+
+.abss{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.abss ul {
+    font-size: 30px;
+}
+
+.abss ul li a {
+    color: #378cde;
+}
+.abss ul li a:hover{
+    color: white;
+}
+
+#nav_content li{
+    float: none;
+}
+
+.flexx{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#one, #two{
+    width: 600px;
+    height: 400px;
+    margin: 6px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.content{
+    width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+
+}
+
+.one{
+    opacity: 1;
+}
+
+.two{
+    opacity: 0;
+}
+
+.ourbest_seller{
+    width: 100%;
+    z-index: -5 !important;
+    min-height: 90%;
+    background-color: rgb(226, 226, 226);
+}
+
+.content_flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content_flex div{
+ 
+    width: 300px;
+    height: 150px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(234, 234, 234), -2px -2px 2px rgb(234, 234, 234);
+}
+
+
+.shop{
+    display: grid;
+    place-items: center;
+}
+
+
+.text{
+    width: 200px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+}
+
+.cards_flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards_flex .card{
+    width: 318px;
+    z-index: -1;
+    margin: 15px;
+    display: flex;
+    height: 330px;
+    box-shadow: 1px 1px 3px rgb(127, 138, 147), -1px -1px 3px aliceblue;
+    border-radius: 10px;
+    position: relative;
+}
+button:hover{
+    cursor: pointer;
+}
+.text_content{
+    width: 159px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+}
+
+.laptop{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+    width: 159px;
+    height: 330px;
+    background-color: rgb(42, 40, 40);
+}
+.ourbest_seller .h1{
+    position: relative;
+    margin: 20px 15px;
+}
+.ourbest_seller .h1::after{
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #378cde;
+    position: absolute;
+    left:8;
+    bottom: -4;
+    content: '';
+
+}
+
+
+.buttons{
+    margin: 20px 15px;
+}
+
+.buttons button{
+    width: 100px;
+    text-transform: capitalize;
+    background-color: #378cde;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    padding: 5px;
+}
+
+.tabcontent{
+    animation: kundai 2s;
+    display: none;
+}
+
+#all{
+    display: block;
+}
+
+.tablinks button.active{
+    background-color: red !important;
+}
+
+.final{
+    margin: 10px;background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.final img{
+    border-radius: 10px;
+}
+
+.image_div {
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    background-color: #378cde;
+    color: white;
+
+}
+
+.divs_flex div{
+    width: 250px;
+}
+.divs_flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.divs_flex p{
+    font-size: 13px;
+    padding: 10px;
+}
+
+@keyframes kundai {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+
+
+
+@media (max-width: 1025px){
+    .icons{
+        display: none;
+    }
+}
+
+@media (max-width: 896px){
+    .icons, .iconss {
+        display: none;
+    }
+    
+    .bars {
+        display: block;
+    }
+    #one, #two{
+        width: 350px;
+        height: 220px;
+        margin: 6px;
+       margin-top: 50px;
+    }
+    #two{
+        margin-top: 40px;
+    }
+    
+}
+
+
+@media (max-width: 782px){
+    .icons, .iconss {
+        display: none;
+    }
+    
+    .bars {
+        display: block;
+    }
+    #one, #two{
+        width: 350px;
+        height: 220px;
+        margin: 6px;
+       margin-top: 50px;
+    }
+    #two{
+        margin-top: 40px;
+    }
+    
+}
+@media(max-width: 668px){
+    #one, #two{
+        margin-top: 120px;
+    }
+}
+
+@media(max-width: 321px){
+    #one, #two{
+        margin-top: 120px;
+    }
+    h1{
+        font-size: 24px !important;
+        padding: 5px 10px;
+    }
+    .buttons button{
+        margin-top: 10px;
+    }
+    
+    h2{
+        font-size: 15px !important;
+        padding: 5px 10px;
+    }
+    .flexx button {
+        margin: 20px !important;
+    }
+    
+}
