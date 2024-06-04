@@ -103,3 +103,12 @@ const fin = document.getElementById('fin');
 ad = () => {
     fin.textContent = 'Added to cart'
 }
+
+const links = document.getElementById('links');
+
+const nav_content = document.getElementById('nav_content');
+
+
+links.addEventListener('click', () => {
+    nav_content.style.display = 'none';
+})
