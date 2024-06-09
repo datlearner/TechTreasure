@@ -47,7 +47,7 @@ const cartt = document.getElementById('cartt');
 addTo = () => {
     cartt.textContent = 'Added to cart';
 };
-
+// function to add to cart
 
 const span = document.getElementById('span');
 //functions to increament and decrease value
