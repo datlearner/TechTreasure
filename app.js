@@ -1,3 +1,4 @@
+//this function toggles css class named change
 function myFunction(x){
     let displayDiv = document.getElementById('nav_content');
 
@@ -11,7 +12,11 @@ function myFunction(x){
     x.classList.toggle('change');
 };
 
-
+/*
+ *this function openTabs
+ opens and closes tabs
+ 
+ */
 function openTabs(evt, myTabs){
     let i, tabcontent, tablinks;
 
@@ -31,20 +36,21 @@ function openTabs(evt, myTabs){
 }
 
 const cart = document.getElementById('cart');
-
+// function to add to the cart
 addToCart = () => {
     cart.textContent = 'Added to cart'
 }
 
 
 const cartt = document.getElementById('cartt');
-
+//function to add to cart
 addTo = () => {
     cartt.textContent = 'Added to cart';
 };
 
 
 const span = document.getElementById('span');
+//functions to increament and decrease value
 
 let count = 0;
 
